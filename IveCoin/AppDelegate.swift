@@ -25,5 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             SaveStateAction()
         )
     }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        mainStore.dispatch(
+            ApplicationDidBecomeActiveAction()
+        )
+    }
 }
 

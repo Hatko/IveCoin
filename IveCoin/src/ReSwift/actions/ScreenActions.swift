@@ -22,3 +22,5 @@ struct ShowTaskScreenFromListAction: Action {}
 struct PopTaskViewScreenAction: Action {}
 
 struct RespondToStatusAction: Action {}
+
+struct ApplicationDidBecomeActiveAction: Action {}
