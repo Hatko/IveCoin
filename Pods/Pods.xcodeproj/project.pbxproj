@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1905C322A38722E303F9387F83FBDEC3 /* ReSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2645AC457B419CE570365808349AA03C /* ReSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C21FEF439C70B9711F64140A4E45AAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1DCF2B7000A55A48576239E571F4C79C /* Pods-IveCoinTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC50C055C66EDE67D9AF62CC6170104 /* Pods-IveCoinTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		291B78584DCD68738417056915A975CF /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CBAF76151CF858D574A099D1E7FC21 /* Store.swift */; };
+		2CCFF63B7E0B118E1BBA853F54488E54 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71271725DE5CCC0BBEE81EB8E9D98E82 /* Reducer.swift */; };
+		5FF207EC3700C97622DFD34586C87435 /* TypeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDC964B22DDA588870C260A7A333C6 /* TypeHelper.swift */; };
+		6F807DFC8350967D7962DFB77EC627F0 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC871B7066428FF774C5F9208197F11C /* Middleware.swift */; };
+		7BFEDFC019BB077FFCEFA5E341735D01 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF8A70D2AC7A1D137462E1C3E5CB1 /* Subscription.swift */; };
+		7E11AC99D27BB0A94B631A64CFC5F81E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		86AF671E022F7D10143A72150C1FD8BF /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6C9E17987035DE48EA9493A0C11119 /* StoreType.swift */; };
+		86FFF1D8DBC9C337F49E92E2469D9601 /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C38E9357DF11B55A4279C68A73D47 /* Assertions.swift */; };
+		AC14EF66529D357425DD2AE429597A07 /* ReSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5279BEEA93D3BB399FBCB375ADD3ACB4 /* ReSwift-dummy.m */; };
+		B06A3477C4D46CF04CACF4C00417A551 /* Pods-IveCoinTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAA76A7B14CF33F495E6027AB93CF25 /* Pods-IveCoinTests-dummy.m */; };
+		D0E72402A4B4AC6BC5C9758BA0A4F7E4 /* Pods-IveCoin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA1719552EABCA5F738AA8D08D0EE2C /* Pods-IveCoin-dummy.m */; };
+		D9A69F6165486F81CDEC95FE507BE537 /* Pods-IveCoin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AF9990B70282655832C8A088FE2D878 /* Pods-IveCoin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5D139164AF7D59322F6A1F7E2FA9842 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375E8868F8F6D6961F33EDED16FF1D5E /* State.swift */; };
+		EE13F959474FD0B2BC17D7125169D9DB /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79671FE58DCBAC8FB9711561D02ED4DA /* Coding.swift */; };
+		EF77BA2702FE67066294307E97443F2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		EF94F849AF3E28CBEC7EE497E5D75BDA /* StoreSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE64CEF372085B24E500493911C621F9 /* StoreSubscriber.swift */; };
+		F25FCDD8343D9425DF28718D31416B46 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711A63FBF227A0CA669ED1D1EDB8F56 /* Action.swift */; };
+		F9285F6A6FD63D15987DC01B396C177B /* DispatchingStoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E955BFC89A34FDBF7FEE7631E7D19 /* DispatchingStoreType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B3F6525A66C0C0B70EEF0F5C8DC6879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDBDC92CA777D96AF11EF5F92437A2C;
+			remoteInfo = ReSwift;
+		};
+		69225BC9D8177C6531B13E025FE5181F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDBDC92CA777D96AF11EF5F92437A2C;
+			remoteInfo = ReSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		075A981F5F4D970E5065A46E57292191 /* Pods-IveCoin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IveCoin.modulemap"; sourceTree = "<group>"; };
+		0E06ADE64A044D80B4935863B153E2AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182FA2C29F0050C44F91BF56FF6A94C5 /* Pods-IveCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IveCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D221E39449E65F75CBB4C8D6ACCE79F /* Pods_IveCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IveCoinTests.framework; path = "Pods-IveCoinTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F3C38E9357DF11B55A4279C68A73D47 /* Assertions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assertions.swift; path = ReSwift/Utils/Assertions.swift; sourceTree = "<group>"; };
+		2645AC457B419CE570365808349AA03C /* ReSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReSwift-umbrella.h"; sourceTree = "<group>"; };
+		2711A63FBF227A0CA669ED1D1EDB8F56 /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Action.swift; path = ReSwift/CoreTypes/Action.swift; sourceTree = "<group>"; };
+		2F10368D3294201FE2D6D7BFCB99F1C9 /* ReSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReSwift.framework; path = ReSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		375E8868F8F6D6961F33EDED16FF1D5E /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = ReSwift/CoreTypes/State.swift; sourceTree = "<group>"; };
+		3AF9990B70282655832C8A088FE2D878 /* Pods-IveCoin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IveCoin-umbrella.h"; sourceTree = "<group>"; };
+		3BC50C055C66EDE67D9AF62CC6170104 /* Pods-IveCoinTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IveCoinTests-umbrella.h"; sourceTree = "<group>"; };
+		3E7274F5C1701B4126FF7E3FFD10DA62 /* ReSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReSwift-prefix.pch"; sourceTree = "<group>"; };
+		5279BEEA93D3BB399FBCB375ADD3ACB4 /* ReSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReSwift-dummy.m"; sourceTree = "<group>"; };
+		536876E3D91DB3A4BACA232DB8F639DB /* Pods-IveCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IveCoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		65E955C673F2A8657EF4681D04C82D5A /* Pods_IveCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IveCoin.framework; path = "Pods-IveCoin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71271725DE5CCC0BBEE81EB8E9D98E82 /* Reducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reducer.swift; path = ReSwift/CoreTypes/Reducer.swift; sourceTree = "<group>"; };
+		76DD018EBE9154131A62DBBCE936E7F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79671FE58DCBAC8FB9711561D02ED4DA /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = ReSwift/Utils/Coding.swift; sourceTree = "<group>"; };
+		81CBAF76151CF858D574A099D1E7FC21 /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Store.swift; path = ReSwift/CoreTypes/Store.swift; sourceTree = "<group>"; };
+		83EDC964B22DDA588870C260A7A333C6 /* TypeHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeHelper.swift; path = ReSwift/Utils/TypeHelper.swift; sourceTree = "<group>"; };
+		8C120C3BB85D83F0D797326F75A8BD73 /* Pods-IveCoinTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IveCoinTests-frameworks.sh"; sourceTree = "<group>"; };
+		8E6C9E17987035DE48EA9493A0C11119 /* StoreType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreType.swift; path = ReSwift/CoreTypes/StoreType.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98AC845BB10CB6D9E3648EA9088174C3 /* Pods-IveCoin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IveCoin-resources.sh"; sourceTree = "<group>"; };
+		9EA1719552EABCA5F738AA8D08D0EE2C /* Pods-IveCoin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IveCoin-dummy.m"; sourceTree = "<group>"; };
+		9EA9FC0AEBE1ABD121107811FBC833F7 /* Pods-IveCoin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IveCoin-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9F64E62BE4805A9AF2A8F22D03CF7ACA /* Pods-IveCoinTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IveCoinTests-resources.sh"; sourceTree = "<group>"; };
+		A9972EF05FED68A4BC4859C43C85DCF5 /* Pods-IveCoin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IveCoin-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD6E955BFC89A34FDBF7FEE7631E7D19 /* DispatchingStoreType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchingStoreType.swift; path = ReSwift/CoreTypes/DispatchingStoreType.swift; sourceTree = "<group>"; };
+		AE64CEF372085B24E500493911C621F9 /* StoreSubscriber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreSubscriber.swift; path = ReSwift/CoreTypes/StoreSubscriber.swift; sourceTree = "<group>"; };
+		C05D4FBA82B983C848054CD0FADD7DA0 /* Pods-IveCoin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IveCoin-frameworks.sh"; sourceTree = "<group>"; };
+		C8A5E73C1247293756AC001DF2D321C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE9FF8A70D2AC7A1D137462E1C3E5CB1 /* Subscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subscription.swift; path = ReSwift/CoreTypes/Subscription.swift; sourceTree = "<group>"; };
+		D324436B2A4B19815F46B84BA55C72FC /* ReSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReSwift.xcconfig; sourceTree = "<group>"; };
+		D4873877D848E74EA3186C7044E7B498 /* ReSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReSwift.modulemap; sourceTree = "<group>"; };
+		DA9631E08434B3ACBC23333435C7A4E7 /* Pods-IveCoinTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IveCoinTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E717B0C1D4348809CDEE418D2C77FCB1 /* Pods-IveCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IveCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		ECAA76A7B14CF33F495E6027AB93CF25 /* Pods-IveCoinTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IveCoinTests-dummy.m"; sourceTree = "<group>"; };
+		EFB735D7C06D768F69C6BFBC22AD6445 /* Pods-IveCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IveCoin.release.xcconfig"; sourceTree = "<group>"; };
+		F2624B203B6CB5A0F60B9F890E6AD261 /* Pods-IveCoinTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IveCoinTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FA7DCDDFACC4534CAD5D97381A2735DB /* Pods-IveCoinTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-IveCoinTests.modulemap"; sourceTree = "<group>"; };
+		FC871B7066428FF774C5F9208197F11C /* Middleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Middleware.swift; path = ReSwift/CoreTypes/Middleware.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BA9D5B275521834E83FA3A503B376E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF77BA2702FE67066294307E97443F2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED73CC2521E47476DF9FFC87EEF7D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C21FEF439C70B9711F64140A4E45AAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E7D64A394EB7220A581D1B6AF0250AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E11AC99D27BB0A94B631A64CFC5F81E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05352E5618A33DA3FEE6C8E0A554E2E5 /* Pods-IveCoin */ = {
+			isa = PBXGroup;
+			children = (
+				C8A5E73C1247293756AC001DF2D321C6 /* Info.plist */,
+				075A981F5F4D970E5065A46E57292191 /* Pods-IveCoin.modulemap */,
+				9EA9FC0AEBE1ABD121107811FBC833F7 /* Pods-IveCoin-acknowledgements.markdown */,
+				A9972EF05FED68A4BC4859C43C85DCF5 /* Pods-IveCoin-acknowledgements.plist */,
+				9EA1719552EABCA5F738AA8D08D0EE2C /* Pods-IveCoin-dummy.m */,
+				C05D4FBA82B983C848054CD0FADD7DA0 /* Pods-IveCoin-frameworks.sh */,
+				98AC845BB10CB6D9E3648EA9088174C3 /* Pods-IveCoin-resources.sh */,
+				3AF9990B70282655832C8A088FE2D878 /* Pods-IveCoin-umbrella.h */,
+				E717B0C1D4348809CDEE418D2C77FCB1 /* Pods-IveCoin.debug.xcconfig */,
+				EFB735D7C06D768F69C6BFBC22AD6445 /* Pods-IveCoin.release.xcconfig */,
+			);
+			name = "Pods-IveCoin";
+			path = "Target Support Files/Pods-IveCoin";
+			sourceTree = "<group>";
+		};
+		1334C0328849627CED539AF332118725 /* ReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2711A63FBF227A0CA669ED1D1EDB8F56 /* Action.swift */,
+				1F3C38E9357DF11B55A4279C68A73D47 /* Assertions.swift */,
+				79671FE58DCBAC8FB9711561D02ED4DA /* Coding.swift */,
+				AD6E955BFC89A34FDBF7FEE7631E7D19 /* DispatchingStoreType.swift */,
+				FC871B7066428FF774C5F9208197F11C /* Middleware.swift */,
+				71271725DE5CCC0BBEE81EB8E9D98E82 /* Reducer.swift */,
+				375E8868F8F6D6961F33EDED16FF1D5E /* State.swift */,
+				81CBAF76151CF858D574A099D1E7FC21 /* Store.swift */,
+				AE64CEF372085B24E500493911C621F9 /* StoreSubscriber.swift */,
+				8E6C9E17987035DE48EA9493A0C11119 /* StoreType.swift */,
+				CE9FF8A70D2AC7A1D137462E1C3E5CB1 /* Subscription.swift */,
+				83EDC964B22DDA588870C260A7A333C6 /* TypeHelper.swift */,
+				AD75C8AEA3D83979A2EAE74BD3957468 /* Support Files */,
+			);
+			name = ReSwift;
+			path = ReSwift;
+			sourceTree = "<group>";
+		};
+		3880F5B544043421EF7DCA3EA86A35B7 /* Pods-IveCoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E06ADE64A044D80B4935863B153E2AE /* Info.plist */,
+				FA7DCDDFACC4534CAD5D97381A2735DB /* Pods-IveCoinTests.modulemap */,
+				F2624B203B6CB5A0F60B9F890E6AD261 /* Pods-IveCoinTests-acknowledgements.markdown */,
+				DA9631E08434B3ACBC23333435C7A4E7 /* Pods-IveCoinTests-acknowledgements.plist */,
+				ECAA76A7B14CF33F495E6027AB93CF25 /* Pods-IveCoinTests-dummy.m */,
+				8C120C3BB85D83F0D797326F75A8BD73 /* Pods-IveCoinTests-frameworks.sh */,
+				9F64E62BE4805A9AF2A8F22D03CF7ACA /* Pods-IveCoinTests-resources.sh */,
+				3BC50C055C66EDE67D9AF62CC6170104 /* Pods-IveCoinTests-umbrella.h */,
+				182FA2C29F0050C44F91BF56FF6A94C5 /* Pods-IveCoinTests.debug.xcconfig */,
+				536876E3D91DB3A4BACA232DB8F639DB /* Pods-IveCoinTests.release.xcconfig */,
+			);
+			name = "Pods-IveCoinTests";
+			path = "Target Support Files/Pods-IveCoinTests";
+			sourceTree = "<group>";
+		};
+		55F6E0BC7125B54A68612E4F65D02E20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65E955C673F2A8657EF4681D04C82D5A /* Pods_IveCoin.framework */,
+				1D221E39449E65F75CBB4C8D6ACCE79F /* Pods_IveCoinTests.framework */,
+				2F10368D3294201FE2D6D7BFCB99F1C9 /* ReSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A58919414556FF8285FCC0A42B1AC168 /* Pods */,
+				55F6E0BC7125B54A68612E4F65D02E20 /* Products */,
+				7FE19FA69EF983B551553E37C720920B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FE19FA69EF983B551553E37C720920B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05352E5618A33DA3FEE6C8E0A554E2E5 /* Pods-IveCoin */,
+				3880F5B544043421EF7DCA3EA86A35B7 /* Pods-IveCoinTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A58919414556FF8285FCC0A42B1AC168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1334C0328849627CED539AF332118725 /* ReSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD75C8AEA3D83979A2EAE74BD3957468 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76DD018EBE9154131A62DBBCE936E7F5 /* Info.plist */,
+				D4873877D848E74EA3186C7044E7B498 /* ReSwift.modulemap */,
+				D324436B2A4B19815F46B84BA55C72FC /* ReSwift.xcconfig */,
+				5279BEEA93D3BB399FBCB375ADD3ACB4 /* ReSwift-dummy.m */,
+				3E7274F5C1701B4126FF7E3FFD10DA62 /* ReSwift-prefix.pch */,
+				2645AC457B419CE570365808349AA03C /* ReSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReSwift";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36ED60727031EA69AE7F17DD606E4354 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A69F6165486F81CDEC95FE507BE537 /* Pods-IveCoin-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394AE219F0FF9DCF6F977D49F7C4C90D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DCF2B7000A55A48576239E571F4C79C /* Pods-IveCoinTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666925DFE6B389153AB7B2BB8350C9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1905C322A38722E303F9387F83FBDEC3 /* ReSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D8F942B25BB1C102ACFCF048DF7E6F7 /* Pods-IveCoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B98FD40E845293E4DC9F43A05C68989 /* Build configuration list for PBXNativeTarget "Pods-IveCoinTests" */;
+			buildPhases = (
+				20FBB05220AE6411C78474B21E6EE75D /* Sources */,
+				9E7D64A394EB7220A581D1B6AF0250AE /* Frameworks */,
+				394AE219F0FF9DCF6F977D49F7C4C90D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				995E293F49DEC52221F37354F7A1A3C0 /* PBXTargetDependency */,
+			);
+			name = "Pods-IveCoinTests";
+			productName = "Pods-IveCoinTests";
+			productReference = 1D221E39449E65F75CBB4C8D6ACCE79F /* Pods_IveCoinTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A24AF91873031881BC841D55AB8C117 /* Pods-IveCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0CC2010C17292DCB2FF55A4C6D4C2D /* Build configuration list for PBXNativeTarget "Pods-IveCoin" */;
+			buildPhases = (
+				A1C370C9D50FA4F2E68335457F170A3D /* Sources */,
+				5ED73CC2521E47476DF9FFC87EEF7D37 /* Frameworks */,
+				36ED60727031EA69AE7F17DD606E4354 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08145FACED6DF3863F37F0B00D4B8A77 /* PBXTargetDependency */,
+			);
+			name = "Pods-IveCoin";
+			productName = "Pods-IveCoin";
+			productReference = 65E955C673F2A8657EF4681D04C82D5A /* Pods_IveCoin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBDBDC92CA777D96AF11EF5F92437A2C /* ReSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718BDF9606B89068ED91B2CE61F1B84E /* Build configuration list for PBXNativeTarget "ReSwift" */;
+			buildPhases = (
+				8310AD1FFA252BD37C8D85A9D783D759 /* Sources */,
+				5BA9D5B275521834E83FA3A503B376E9 /* Frameworks */,
+				B666925DFE6B389153AB7B2BB8350C9F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReSwift;
+			productName = ReSwift;
+			productReference = 2F10368D3294201FE2D6D7BFCB99F1C9 /* ReSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 55F6E0BC7125B54A68612E4F65D02E20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A24AF91873031881BC841D55AB8C117 /* Pods-IveCoin */,
+				5D8F942B25BB1C102ACFCF048DF7E6F7 /* Pods-IveCoinTests */,
+				FBDBDC92CA777D96AF11EF5F92437A2C /* ReSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20FBB05220AE6411C78474B21E6EE75D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06A3477C4D46CF04CACF4C00417A551 /* Pods-IveCoinTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8310AD1FFA252BD37C8D85A9D783D759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25FCDD8343D9425DF28718D31416B46 /* Action.swift in Sources */,
+				86FFF1D8DBC9C337F49E92E2469D9601 /* Assertions.swift in Sources */,
+				EE13F959474FD0B2BC17D7125169D9DB /* Coding.swift in Sources */,
+				F9285F6A6FD63D15987DC01B396C177B /* DispatchingStoreType.swift in Sources */,
+				6F807DFC8350967D7962DFB77EC627F0 /* Middleware.swift in Sources */,
+				2CCFF63B7E0B118E1BBA853F54488E54 /* Reducer.swift in Sources */,
+				AC14EF66529D357425DD2AE429597A07 /* ReSwift-dummy.m in Sources */,
+				E5D139164AF7D59322F6A1F7E2FA9842 /* State.swift in Sources */,
+				291B78584DCD68738417056915A975CF /* Store.swift in Sources */,
+				EF94F849AF3E28CBEC7EE497E5D75BDA /* StoreSubscriber.swift in Sources */,
+				86AF671E022F7D10143A72150C1FD8BF /* StoreType.swift in Sources */,
+				7BFEDFC019BB077FFCEFA5E341735D01 /* Subscription.swift in Sources */,
+				5FF207EC3700C97622DFD34586C87435 /* TypeHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C370C9D50FA4F2E68335457F170A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E72402A4B4AC6BC5C9758BA0A4F7E4 /* Pods-IveCoin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08145FACED6DF3863F37F0B00D4B8A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReSwift;
+			target = FBDBDC92CA777D96AF11EF5F92437A2C /* ReSwift */;
+			targetProxy = 4B3F6525A66C0C0B70EEF0F5C8DC6879 /* PBXContainerItemProxy */;
+		};
+		995E293F49DEC52221F37354F7A1A3C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReSwift;
+			target = FBDBDC92CA777D96AF11EF5F92437A2C /* ReSwift */;
+			targetProxy = 69225BC9D8177C6531B13E025FE5181F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3B1C293B2EF973AD133E0D67C1E8F97C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E717B0C1D4348809CDEE418D2C77FCB1 /* Pods-IveCoin.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-IveCoin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IveCoin/Pods-IveCoin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IveCoin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59F832D848448C1AB2FF2877C9DD3C0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB735D7C06D768F69C6BFBC22AD6445 /* Pods-IveCoin.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-IveCoin/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IveCoin/Pods-IveCoin.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IveCoin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98AEAA0AD4D7AD75800ADC515378E72D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 182FA2C29F0050C44F91BF56FF6A94C5 /* Pods-IveCoinTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-IveCoinTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IveCoinTests/Pods-IveCoinTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IveCoinTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5989C66ED437C2EAC3E4822BD180F22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536876E3D91DB3A4BACA232DB8F639DB /* Pods-IveCoinTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-IveCoinTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IveCoinTests/Pods-IveCoinTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_IveCoinTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD8CA4D42305CB5DDAAACA1E92BD2F97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D324436B2A4B19815F46B84BA55C72FC /* ReSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ReSwift/ReSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReSwift/ReSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ReSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4B40DCCA96AB47D093DA4F7C8B6B809 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D324436B2A4B19815F46B84BA55C72FC /* ReSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ReSwift/ReSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReSwift/ReSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ReSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B98FD40E845293E4DC9F43A05C68989 /* Build configuration list for PBXNativeTarget "Pods-IveCoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98AEAA0AD4D7AD75800ADC515378E72D /* Debug */,
+				A5989C66ED437C2EAC3E4822BD180F22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718BDF9606B89068ED91B2CE61F1B84E /* Build configuration list for PBXNativeTarget "ReSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4B40DCCA96AB47D093DA4F7C8B6B809 /* Debug */,
+				BD8CA4D42305CB5DDAAACA1E92BD2F97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0CC2010C17292DCB2FF55A4C6D4C2D /* Build configuration list for PBXNativeTarget "Pods-IveCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1C293B2EF973AD133E0D67C1E8F97C /* Debug */,
+				59F832D848448C1AB2FF2877C9DD3C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

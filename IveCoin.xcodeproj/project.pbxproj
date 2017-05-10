@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		944E72D633419CEBEC8404B7 /* Pods_IveCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44FEAEA988DAB69C0995F87 /* Pods_IveCoinTests.framework */; };
+		E23FB84C37E12A16196FE264 /* Pods_IveCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB796EA1B56E27D21861FED /* Pods_IveCoin.framework */; };
+		F5659EBB1EBDBADE005F25DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5659EBA1EBDBADE005F25DD /* AppDelegate.swift */; };
+		F5659EC01EBDBADE005F25DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5659EBE1EBDBADE005F25DD /* Main.storyboard */; };
+		F5659EC21EBDBADE005F25DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5659EC11EBDBADE005F25DD /* Assets.xcassets */; };
+		F5659EC51EBDBADE005F25DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5659EC31EBDBADE005F25DD /* LaunchScreen.storyboard */; };
+		F5659EDB1EBE15F4005F25DD /* RecordsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5659EDA1EBE15F4005F25DD /* RecordsViewControllerTests.swift */; };
+		F5659EE61EBE16BF005F25DD /* UIViewController+StoryboardInstantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5659EE51EBE16BF005F25DD /* UIViewController+StoryboardInstantiation.swift */; };
+		F5659EF71EBE2E52005F25DD /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5659EF61EBE2E52005F25DD /* MainReducer.swift */; };
+		F5659EF91EBE2F3E005F25DD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5659EF81EBE2F3E005F25DD /* AppState.swift */; };
+		F58AC9921EC00F84004CE64A /* PersistentStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9911EC00F84004CE64A /* PersistentStorageService.swift */; };
+		F58AC9941EC0689F004CE64A /* TaskCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9931EC0689F004CE64A /* TaskCreatorViewController.swift */; };
+		F58AC9991EC20052004CE64A /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9981EC20052004CE64A /* TaskListViewController.swift */; };
+		F58AC99B1EC2006A004CE64A /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC99A1EC2006A004CE64A /* TaskTableViewCell.swift */; };
+		F58AC99D1EC22CEC004CE64A /* ScreenActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC99C1EC22CEC004CE64A /* ScreenActions.swift */; };
+		F58AC9AA1EC2560D004CE64A /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9A91EC2560D004CE64A /* ErrorPresenter.swift */; };
+		F58AC9B31EC27CD6004CE64A /* TaskViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9B21EC27CD6004CE64A /* TaskViewControllerTests.swift */; };
+		F58AC9B51EC2D596004CE64A /* IveNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9B41EC2D596004CE64A /* IveNavigationBar.swift */; };
+		F58AC9B71EC2EBBF004CE64A /* ProjectReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9B61EC2EBBF004CE64A /* ProjectReducer.swift */; };
+		F58AC9B91EC2F08A004CE64A /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58AC9B81EC2F08A004CE64A /* TaskViewController.swift */; };
+		F5E8F1711EBF571E00884F26 /* RecordsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F16E1EBF571E00884F26 /* RecordsTopView.swift */; };
+		F5E8F1721EBF571E00884F26 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F16F1EBF571E00884F26 /* RecordsViewController.swift */; };
+		F5E8F1731EBF571E00884F26 /* WorkStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1701EBF571E00884F26 /* WorkStatusView.swift */; };
+		F5E8F1791EBF62CA00884F26 /* ProjectsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1781EBF62CA00884F26 /* ProjectsListViewControllerTests.swift */; };
+		F5E8F17D1EBF666500884F26 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F17C1EBF666500884F26 /* ProjectTests.swift */; };
+		F5E8F1821EBF782A00884F26 /* ProjectsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1811EBF782A00884F26 /* ProjectsListViewController.swift */; };
+		F5E8F1841EBF784400884F26 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1831EBF784400884F26 /* ProjectTableViewCell.swift */; };
+		F5E8F1881EBF84B700884F26 /* ProjectTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1871EBF84B700884F26 /* ProjectTableViewCellTests.swift */; };
+		F5E8F18A1EBFA18E00884F26 /* ProjectActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1891EBFA18E00884F26 /* ProjectActions.swift */; };
+		F5E8F18F1EBFB65600884F26 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F18E1EBFB65600884F26 /* Project.swift */; };
+		F5E8F1941EBFBFF900884F26 /* MocStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1931EBFBFF900884F26 /* MocStore.swift */; };
+		F5E8F1961EBFC81600884F26 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1951EBFC81600884F26 /* UIColor+Custom.swift */; };
+		F5E8F1981EBFD78200884F26 /* PlistSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8F1971EBFD78200884F26 /* PlistSerializable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5659ED51EBE15C8005F25DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5659EAF1EBDBADE005F25DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5659EB61EBDBADE005F25DD;
+			remoteInfo = IveCoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AB796EA1B56E27D21861FED /* Pods_IveCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IveCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CF89A529135F7220EE2F52E /* Pods-IveCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IveCoin.release.xcconfig"; path = "Pods/Target Support Files/Pods-IveCoin/Pods-IveCoin.release.xcconfig"; sourceTree = "<group>"; };
+		267ACCED115C7F1D98657655 /* Pods-IveCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IveCoinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IveCoinTests/Pods-IveCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FCCBB2BBF06FC2EFF5B5CE0 /* Pods-IveCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IveCoin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IveCoin/Pods-IveCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		A44FEAEA988DAB69C0995F87 /* Pods_IveCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IveCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2ACA5D5E4712D7533D7A64B /* Pods-IveCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IveCoinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IveCoinTests/Pods-IveCoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5659EB71EBDBADE005F25DD /* IveCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IveCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5659EBA1EBDBADE005F25DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5659EBF1EBDBADE005F25DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5659EC11EBDBADE005F25DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5659EC41EBDBADE005F25DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5659EC61EBDBADE005F25DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5659ED01EBE15C8005F25DD /* IveCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IveCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5659ED41EBE15C8005F25DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5659EDA1EBE15F4005F25DD /* RecordsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewControllerTests.swift; sourceTree = "<group>"; };
+		F5659EE51EBE16BF005F25DD /* UIViewController+StoryboardInstantiation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiation.swift"; sourceTree = "<group>"; };
+		F5659EF61EBE2E52005F25DD /* MainReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		F5659EF81EBE2F3E005F25DD /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F58AC9911EC00F84004CE64A /* PersistentStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStorageService.swift; sourceTree = "<group>"; };
+		F58AC9931EC0689F004CE64A /* TaskCreatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCreatorViewController.swift; sourceTree = "<group>"; };
+		F58AC9981EC20052004CE64A /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		F58AC99A1EC2006A004CE64A /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		F58AC99C1EC22CEC004CE64A /* ScreenActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenActions.swift; sourceTree = "<group>"; };
+		F58AC9A91EC2560D004CE64A /* ErrorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
+		F58AC9B21EC27CD6004CE64A /* TaskViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewControllerTests.swift; sourceTree = "<group>"; };
+		F58AC9B41EC2D596004CE64A /* IveNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IveNavigationBar.swift; sourceTree = "<group>"; };
+		F58AC9B61EC2EBBF004CE64A /* ProjectReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectReducer.swift; sourceTree = "<group>"; };
+		F58AC9B81EC2F08A004CE64A /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		F5E8F16E1EBF571E00884F26 /* RecordsTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsTopView.swift; sourceTree = "<group>"; };
+		F5E8F16F1EBF571E00884F26 /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
+		F5E8F1701EBF571E00884F26 /* WorkStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkStatusView.swift; sourceTree = "<group>"; };
+		F5E8F1781EBF62CA00884F26 /* ProjectsListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListViewControllerTests.swift; sourceTree = "<group>"; };
+		F5E8F17C1EBF666500884F26 /* ProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		F5E8F1811EBF782A00884F26 /* ProjectsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsListViewController.swift; sourceTree = "<group>"; };
+		F5E8F1831EBF784400884F26 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		F5E8F1871EBF84B700884F26 /* ProjectTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCellTests.swift; sourceTree = "<group>"; };
+		F5E8F1891EBFA18E00884F26 /* ProjectActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectActions.swift; sourceTree = "<group>"; };
+		F5E8F18E1EBFB65600884F26 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		F5E8F1931EBFBFF900884F26 /* MocStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MocStore.swift; sourceTree = "<group>"; };
+		F5E8F1951EBFC81600884F26 /* UIColor+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		F5E8F1971EBFD78200884F26 /* PlistSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistSerializable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5659EB41EBDBADE005F25DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23FB84C37E12A16196FE264 /* Pods_IveCoin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5659ECD1EBE15C8005F25DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				944E72D633419CEBEC8404B7 /* Pods_IveCoinTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73B59E528C6FC146E16CE63B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FCCBB2BBF06FC2EFF5B5CE0 /* Pods-IveCoin.debug.xcconfig */,
+				0CF89A529135F7220EE2F52E /* Pods-IveCoin.release.xcconfig */,
+				267ACCED115C7F1D98657655 /* Pods-IveCoinTests.debug.xcconfig */,
+				B2ACA5D5E4712D7533D7A64B /* Pods-IveCoinTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5659EAE1EBDBADE005F25DD = {
+			isa = PBXGroup;
+			children = (
+				F5659EB91EBDBADE005F25DD /* IveCoin */,
+				F5659ED11EBE15C8005F25DD /* IveCoinTests */,
+				F5659EB81EBDBADE005F25DD /* Products */,
+				73B59E528C6FC146E16CE63B /* Pods */,
+				F5DE9A1174E40C12CE13FD63 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5659EB81EBDBADE005F25DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5659EB71EBDBADE005F25DD /* IveCoin.app */,
+				F5659ED01EBE15C8005F25DD /* IveCoinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5659EB91EBDBADE005F25DD /* IveCoin */ = {
+			isa = PBXGroup;
+			children = (
+				F5659EDF1EBE168F005F25DD /* res */,
+				F5659EE01EBE168F005F25DD /* src */,
+				F5659EBA1EBDBADE005F25DD /* AppDelegate.swift */,
+				F5659EBE1EBDBADE005F25DD /* Main.storyboard */,
+				F5659EC11EBDBADE005F25DD /* Assets.xcassets */,
+				F5659EC31EBDBADE005F25DD /* LaunchScreen.storyboard */,
+				F5659EC61EBDBADE005F25DD /* Info.plist */,
+			);
+			path = IveCoin;
+			sourceTree = "<group>";
+		};
+		F5659ED11EBE15C8005F25DD /* IveCoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5659ED41EBE15C8005F25DD /* Info.plist */,
+				F58AC9B11EC27C67004CE64A /* tests */,
+				F5E8F1931EBFBFF900884F26 /* MocStore.swift */,
+			);
+			path = IveCoinTests;
+			sourceTree = "<group>";
+		};
+		F5659EDF1EBE168F005F25DD /* res */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		F5659EE01EBE168F005F25DD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8F18D1EBFB64D00884F26 /* model */,
+				F5659EED1EBE2E12005F25DD /* ReSwift */,
+				F5659EE11EBE168F005F25DD /* ext */,
+				F5659EE21EBE168F005F25DD /* ui */,
+				F58AC9911EC00F84004CE64A /* PersistentStorageService.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F5659EE11EBE168F005F25DD /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				F5659EE51EBE16BF005F25DD /* UIViewController+StoryboardInstantiation.swift */,
+				F5E8F1951EBFC81600884F26 /* UIColor+Custom.swift */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		F5659EE21EBE168F005F25DD /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F58AC9971EC20052004CE64A /* taskListViewController */,
+				F5E8F1801EBF782A00884F26 /* projectsListViewController */,
+				F5E8F16D1EBF571E00884F26 /* recordsViewController */,
+				F58AC9931EC0689F004CE64A /* TaskCreatorViewController.swift */,
+				F58AC9A91EC2560D004CE64A /* ErrorPresenter.swift */,
+				F58AC9B41EC2D596004CE64A /* IveNavigationBar.swift */,
+				F58AC9B81EC2F08A004CE64A /* TaskViewController.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F5659EED1EBE2E12005F25DD /* ReSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F5659EEE1EBE2E12005F25DD /* actions */,
+				F5659EEF1EBE2E12005F25DD /* reducers */,
+				F5659EF01EBE2E12005F25DD /* states */,
+			);
+			path = ReSwift;
+			sourceTree = "<group>";
+		};
+		F5659EEE1EBE2E12005F25DD /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8F1891EBFA18E00884F26 /* ProjectActions.swift */,
+				F58AC99C1EC22CEC004CE64A /* ScreenActions.swift */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		F5659EEF1EBE2E12005F25DD /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+				F5659EF61EBE2E52005F25DD /* MainReducer.swift */,
+				F58AC9B61EC2EBBF004CE64A /* ProjectReducer.swift */,
+			);
+			path = reducers;
+			sourceTree = "<group>";
+		};
+		F5659EF01EBE2E12005F25DD /* states */ = {
+			isa = PBXGroup;
+			children = (
+				F5659EF81EBE2F3E005F25DD /* AppState.swift */,
+			);
+			path = states;
+			sourceTree = "<group>";
+		};
+		F58AC9971EC20052004CE64A /* taskListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F58AC9981EC20052004CE64A /* TaskListViewController.swift */,
+				F58AC99A1EC2006A004CE64A /* TaskTableViewCell.swift */,
+			);
+			path = taskListViewController;
+			sourceTree = "<group>";
+		};
+		F58AC9B11EC27C67004CE64A /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				F5659EDA1EBE15F4005F25DD /* RecordsViewControllerTests.swift */,
+				F5E8F1781EBF62CA00884F26 /* ProjectsListViewControllerTests.swift */,
+				F5E8F17C1EBF666500884F26 /* ProjectTests.swift */,
+				F5E8F1871EBF84B700884F26 /* ProjectTableViewCellTests.swift */,
+				F58AC9B21EC27CD6004CE64A /* TaskViewControllerTests.swift */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		F5DE9A1174E40C12CE13FD63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AB796EA1B56E27D21861FED /* Pods_IveCoin.framework */,
+				A44FEAEA988DAB69C0995F87 /* Pods_IveCoinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5E8F16D1EBF571E00884F26 /* recordsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8F16E1EBF571E00884F26 /* RecordsTopView.swift */,
+				F5E8F16F1EBF571E00884F26 /* RecordsViewController.swift */,
+				F5E8F1701EBF571E00884F26 /* WorkStatusView.swift */,
+			);
+			path = recordsViewController;
+			sourceTree = "<group>";
+		};
+		F5E8F1801EBF782A00884F26 /* projectsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8F1811EBF782A00884F26 /* ProjectsListViewController.swift */,
+				F5E8F1831EBF784400884F26 /* ProjectTableViewCell.swift */,
+			);
+			path = projectsListViewController;
+			sourceTree = "<group>";
+		};
+		F5E8F18D1EBFB64D00884F26 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8F18E1EBFB65600884F26 /* Project.swift */,
+				F5E8F1971EBFD78200884F26 /* PlistSerializable.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5659EB61EBDBADE005F25DD /* IveCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5659EC91EBDBADE005F25DD /* Build configuration list for PBXNativeTarget "IveCoin" */;
+			buildPhases = (
+				916460C6D41EBEAADB9C9E37 /* [CP] Check Pods Manifest.lock */,
+				F5659EB31EBDBADE005F25DD /* Sources */,
+				F5659EB41EBDBADE005F25DD /* Frameworks */,
+				F5659EB51EBDBADE005F25DD /* Resources */,
+				FE8440F6C07552C10B1CE1FA /* [CP] Embed Pods Frameworks */,
+				2A2648BE320F3DD3FADFB720 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IveCoin;
+			productName = IveCoin;
+			productReference = F5659EB71EBDBADE005F25DD /* IveCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5659ECF1EBE15C8005F25DD /* IveCoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5659ED91EBE15C8005F25DD /* Build configuration list for PBXNativeTarget "IveCoinTests" */;
+			buildPhases = (
+				0B24B9B165969AD35AF4110D /* [CP] Check Pods Manifest.lock */,
+				F5659ECC1EBE15C8005F25DD /* Sources */,
+				F5659ECD1EBE15C8005F25DD /* Frameworks */,
+				F5659ECE1EBE15C8005F25DD /* Resources */,
+				662C05DD3CA2F62C6ADF3A06 /* [CP] Embed Pods Frameworks */,
+				677E259DB00537EC3495D231 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5659ED61EBE15C8005F25DD /* PBXTargetDependency */,
+			);
+			name = IveCoinTests;
+			productName = IveCoinTests;
+			productReference = F5659ED01EBE15C8005F25DD /* IveCoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5659EAF1EBDBADE005F25DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = com.hat;
+				TargetAttributes = {
+					F5659EB61EBDBADE005F25DD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4PB8BSTQ9F;
+						ProvisioningStyle = Automatic;
+					};
+					F5659ECF1EBE15C8005F25DD = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4PB8BSTQ9F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5659EB61EBDBADE005F25DD;
+					};
+				};
+			};
+			buildConfigurationList = F5659EB21EBDBADE005F25DD /* Build configuration list for PBXProject "IveCoin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5659EAE1EBDBADE005F25DD;
+			productRefGroup = F5659EB81EBDBADE005F25DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5659EB61EBDBADE005F25DD /* IveCoin */,
+				F5659ECF1EBE15C8005F25DD /* IveCoinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5659EB51EBDBADE005F25DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5659EC51EBDBADE005F25DD /* LaunchScreen.storyboard in Resources */,
+				F5659EC21EBDBADE005F25DD /* Assets.xcassets in Resources */,
+				F5659EC01EBDBADE005F25DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5659ECE1EBE15C8005F25DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B24B9B165969AD35AF4110D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2A2648BE320F3DD3FADFB720 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IveCoin/Pods-IveCoin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		662C05DD3CA2F62C6ADF3A06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IveCoinTests/Pods-IveCoinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		677E259DB00537EC3495D231 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IveCoinTests/Pods-IveCoinTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		916460C6D41EBEAADB9C9E37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE8440F6C07552C10B1CE1FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IveCoin/Pods-IveCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5659EB31EBDBADE005F25DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5E8F1981EBFD78200884F26 /* PlistSerializable.swift in Sources */,
+				F58AC9921EC00F84004CE64A /* PersistentStorageService.swift in Sources */,
+				F58AC9B51EC2D596004CE64A /* IveNavigationBar.swift in Sources */,
+				F5E8F1821EBF782A00884F26 /* ProjectsListViewController.swift in Sources */,
+				F5E8F1841EBF784400884F26 /* ProjectTableViewCell.swift in Sources */,
+				F58AC9991EC20052004CE64A /* TaskListViewController.swift in Sources */,
+				F5E8F18A1EBFA18E00884F26 /* ProjectActions.swift in Sources */,
+				F5659EF71EBE2E52005F25DD /* MainReducer.swift in Sources */,
+				F5659EF91EBE2F3E005F25DD /* AppState.swift in Sources */,
+				F58AC9B91EC2F08A004CE64A /* TaskViewController.swift in Sources */,
+				F58AC9B71EC2EBBF004CE64A /* ProjectReducer.swift in Sources */,
+				F5E8F1731EBF571E00884F26 /* WorkStatusView.swift in Sources */,
+				F5659EBB1EBDBADE005F25DD /* AppDelegate.swift in Sources */,
+				F58AC9AA1EC2560D004CE64A /* ErrorPresenter.swift in Sources */,
+				F58AC99D1EC22CEC004CE64A /* ScreenActions.swift in Sources */,
+				F58AC99B1EC2006A004CE64A /* TaskTableViewCell.swift in Sources */,
+				F5659EE61EBE16BF005F25DD /* UIViewController+StoryboardInstantiation.swift in Sources */,
+				F58AC9941EC0689F004CE64A /* TaskCreatorViewController.swift in Sources */,
+				F5E8F1711EBF571E00884F26 /* RecordsTopView.swift in Sources */,
+				F5E8F1721EBF571E00884F26 /* RecordsViewController.swift in Sources */,
+				F5E8F1961EBFC81600884F26 /* UIColor+Custom.swift in Sources */,
+				F5E8F18F1EBFB65600884F26 /* Project.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5659ECC1EBE15C8005F25DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5E8F1791EBF62CA00884F26 /* ProjectsListViewControllerTests.swift in Sources */,
+				F5659EDB1EBE15F4005F25DD /* RecordsViewControllerTests.swift in Sources */,
+				F5E8F1941EBFBFF900884F26 /* MocStore.swift in Sources */,
+				F5E8F17D1EBF666500884F26 /* ProjectTests.swift in Sources */,
+				F58AC9B31EC27CD6004CE64A /* TaskViewControllerTests.swift in Sources */,
+				F5E8F1881EBF84B700884F26 /* ProjectTableViewCellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5659ED61EBE15C8005F25DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5659EB61EBDBADE005F25DD /* IveCoin */;
+			targetProxy = F5659ED51EBE15C8005F25DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5659EBE1EBDBADE005F25DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5659EBF1EBDBADE005F25DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5659EC31EBDBADE005F25DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5659EC41EBDBADE005F25DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5659EC71EBDBADE005F25DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5659EC81EBDBADE005F25DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5659ECA1EBDBADE005F25DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCCBB2BBF06FC2EFF5B5CE0 /* Pods-IveCoin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PB8BSTQ9F;
+				INFOPLIST_FILE = IveCoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hat.IveCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F5659ECB1EBDBADE005F25DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF89A529135F7220EE2F52E /* Pods-IveCoin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4PB8BSTQ9F;
+				INFOPLIST_FILE = IveCoin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hat.IveCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F5659ED71EBE15C8005F25DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267ACCED115C7F1D98657655 /* Pods-IveCoinTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4PB8BSTQ9F;
+				INFOPLIST_FILE = IveCoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hat.IveCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IveCoin.app/IveCoin";
+			};
+			name = Debug;
+		};
+		F5659ED81EBE15C8005F25DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2ACA5D5E4712D7533D7A64B /* Pods-IveCoinTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4PB8BSTQ9F;
+				INFOPLIST_FILE = IveCoinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hat.IveCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IveCoin.app/IveCoin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5659EB21EBDBADE005F25DD /* Build configuration list for PBXProject "IveCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5659EC71EBDBADE005F25DD /* Debug */,
+				F5659EC81EBDBADE005F25DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5659EC91EBDBADE005F25DD /* Build configuration list for PBXNativeTarget "IveCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5659ECA1EBDBADE005F25DD /* Debug */,
+				F5659ECB1EBDBADE005F25DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5659ED91EBE15C8005F25DD /* Build configuration list for PBXNativeTarget "IveCoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5659ED71EBE15C8005F25DD /* Debug */,
+				F5659ED81EBE15C8005F25DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5659EAF1EBDBADE005F25DD /* Project object */;
+}
