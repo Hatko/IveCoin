@@ -13,8 +13,6 @@ class TaskTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var spentTimeLabel: UILabel!
     
-    
-    
     func charge(withTask task: Task) {
         nameLabel.text = task.name
         spentTimeLabel.text = task.timeInHrsStringRepresentation
