@@ -11,13 +11,13 @@ import ReSwift
 @testable import IveCoin
 
 class TaskViewControllerTests: XCTestCase {
-    var sut: TaskViewController!
+    var sut: TaskCreatorViewController!
     var navigationController: UINavigationController?
     
     override func setUp() {
         super.setUp()
         
-        sut = TaskViewController.storyboardController()
+        sut = TaskCreatorViewController.storyboardController()
         
         navigationController = UINavigationController(rootViewController: sut)
         

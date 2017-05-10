@@ -80,10 +80,6 @@ extension ProjectsListViewController: UITableViewDelegate {
         mainStore.dispatch(
             SelectProjectAction(projectIndex: indexPath.row)
         )
-        
-        mainStore.dispatch(
-            ShowTaskScreenFromListAction()
-        )
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
